@@ -18,5 +18,6 @@ class TestCase(unittest.TestCase):
         area = task.retarea(4)
         self.assertEqual(50.27, area)
 
+
 if __name__ == '__main__':
     unittest.main()
