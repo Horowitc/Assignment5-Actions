@@ -24,6 +24,12 @@ class TestCase(unittest.TestCase):
         liststr = task.retlist([17, 4, 30, 11])
         self.assertEqual(liststr, (17, 11))
 
+    def testdate(self):
+        datedif = task.retdate([1, 1, 2004], [1, 18, 2004])
+        self.assertEqual(datedif, 17)
+        datedif = task.retdate([5, 15, 2004], [1, 4, 2020])
+        self.assertEqual(datedif, 5713)
+
 
 if __name__ == '__main__':
     unittest.main()
