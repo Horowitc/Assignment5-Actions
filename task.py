@@ -13,4 +13,3 @@ def retarea(radius):
 
 def retlist(inplist):
     return inplist[0], inplist[-1]
-
