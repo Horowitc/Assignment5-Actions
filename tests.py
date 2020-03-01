@@ -18,6 +18,12 @@ class TestCase(unittest.TestCase):
         area = task.retarea(4)
         self.assertEqual(50.27, area)
 
+    def testlist(self):
+        liststr = task.retlist([0, 1, 2, 3, 4, 5])
+        self.assertEqual(liststr, (0, 5))
+        liststr = task.retlist([17, 4, 30, 11])
+        self.assertEqual(liststr, (17, 11))
+
 
 if __name__ == '__main__':
     unittest.main()
